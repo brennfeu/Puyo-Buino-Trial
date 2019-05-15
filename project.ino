@@ -1,9 +1,14 @@
 #include <Gamebuino-Meta.h>
+int timerFrame = 0;
+int timerSecond = 0;
+int timerMinute = 0;
 
 // SETUP CODE = ONCE
 void setup() {
   // put your setup code here, to run once:
   gb.begin();
+
+  // variables setup
 }
 
 // INFINITE LOOP
@@ -12,9 +17,8 @@ void loop() {
   while(!gb.update());
   gb.display.clear();
 
-
-  // C'est ici que le plus gros du programme se déroule
-  gb.display.print("hello, world");
+  incrementTimer();
+  gb.display.printf("%i:%i", timerSecond, timerMinute);
   drawPuyo(3, 3, 'r');
 }
 
@@ -38,6 +42,17 @@ void setDisplayColor(char _color) {
   }
   else {
     gb.display.setColor(PURPLE);
+  }
+}
+void incrementTimer() {
+  timerFrame++;
+  if (timerFrame > 30) {
+    timerSecond++;
+    timerFrame -= 30;
+  }
+  if (timerSecond > 60) {
+    timerMinute++;
+    timerSecond -= 60;
   }
 }
 // PUYO
