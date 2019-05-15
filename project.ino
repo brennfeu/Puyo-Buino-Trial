@@ -16,9 +16,13 @@ void loop() {
   // put your main code here, to run repeatedly:
   while(!gb.update());
   gb.display.clear();
-
+  
+  // TIMER
   incrementTimer();
+  gb.display.setCursor(10, 10);
   gb.display.printf("%i:%i", timerSecond, timerMinute);
+
+  // TESTS
   drawPuyo(3, 3, 'r');
 }
 
