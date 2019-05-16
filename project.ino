@@ -138,6 +138,8 @@ Image YELLOW_BLINK(YELLOW_BLINK_DATA);
 
 int i = 0;
 int j = 0;
+int k = 0;
+int l = 0;
 
 int timerFrame = 0;
 int timerSecond = 0;
@@ -171,6 +173,7 @@ char board[12][6] = {
   {'e', 'e', 'e', 'e', 'e', 'e'},
 };
 int boardFall[12][6];
+int boardPop[12][6];
 
 String string1 = "";
 String string2 = "";
@@ -190,6 +193,13 @@ void loop() {
   // put your main code here, to run repeatedly:
   while (!gb.update());
   gb.display.clear();
+
+  if (board[0][2] != 'x' || board[0][3] != 'x') {
+    gameOver = true;
+  }
+  if (gb.buttons.pressed(BUTTON_MENU)) {
+    resetGame();
+  }
 
   if (!gameOver) {    
     // GAME
@@ -231,6 +241,7 @@ void resetGame() {
     for (j = 0; j < 6; j++) {
       board[i][j] = 'e';
       boardFall[i][j] = 0;
+      boardPop[i][i] = 0;
     }
   }
   board[0][2] = 'x';
@@ -284,6 +295,11 @@ void incrementTimer() {
   }
   if (timerSecond <= 0) {
     gameOver = true;
+  }
+  for (i = 0; i < 12; i++) {
+    for (j = 0; j < 6; j++) {
+      boardPop[i][j]--;
+    }
   }
 }
 char getRandomColor() {
@@ -440,7 +456,69 @@ void checkBoard() {
   }
 }
 void checkCombos() {
-  state = 4;
+  bool comboBoard[12][6];
+  int comboCounter = 0;
+  state = 3;
+  
+  // All Puyos Loop
+  for (i = 0; i < 12; i++) {
+    for (j = 0; j < 6; j++) {
+      if (board[i][j] != 'e' && board[i][j] != 'x' && boardPop[i][j] != 0) {
+        
+        // reset board
+        for (k = 0; k < 12; k++) {
+          for (l = 0; l < 6; l++) {
+            comboBoard[k][l] == false;
+          }
+        }
+        comboCounter = 0;
+        
+        // All Puyos Loop Comparison ASC
+        for (k = 0; k < 12; k++) {
+          for (l = 1; l < 5; l++) {
+            if (i == k && j == l) {
+              comboBoard[k][l] == true;
+              comboCounter++;
+            }
+            if (comboBoard[k][l-1]) {
+              comboBoard[k][l] == true;
+              comboCounter++;
+            }
+            if (k == 0) {
+              // just to make sure next won't be an error
+            }
+            else if (comboBoard[k-1][l]) {
+              comboBoard[k][l] == true;
+              comboCounter++;
+            }
+          }
+        }
+
+        // Explosion confirmed ?
+        if (comboCounter >= 4) {
+          boardPop[i][j] = 10; // nb frames
+          board[i][j] = 'e';
+        }
+      }
+    }
+  }
+
+  // anim
+  for (i = 0; i < 12; i++) {
+    for (j = 0; j < 6; j++) {
+      if (boardPop[i][j] > 5) {
+        drawPuyoPopA(j * 5 + 2, i * 5 + 2, board[i][j]);
+        state = 2;
+      }
+      else if (boardPop[i][j] > 0) {
+        drawPuyoPopB(j * 5 + 2, i * 5 + 2, board[i][j]);
+        state = 2;
+      }
+      else if (boardPop[i][j] == 0) {
+        state = 4;
+      }
+    }
+  }
 }
 
 // DRAW
@@ -513,6 +591,74 @@ void drawText(String _string1, int _string2, String _string3) {
   gb.display.print(_string3);
 }
 void drawPuyo(int _x, int _y, char _color) {
+  if (_color == 'r') {
+    if (timerFrame >= 25 && timerSecond%4 == 0) {
+      gb.display.drawImage(_x, _y, RED_BLINK);
+    }
+    else {
+      gb.display.drawImage(_x, _y, RED_STAND);
+    }
+  }
+  if (_color == 'b') {
+    if (timerFrame >= 25 && timerSecond%4 == 1) {
+      gb.display.drawImage(_x, _y, BLUE_STAND);
+    }
+    else {
+      gb.display.drawImage(_x, _y, BLUE_STAND);
+    }
+  }
+  if (_color == 'g') {
+    if (timerFrame >= 25 && timerSecond%4 == 2) {
+      gb.display.drawImage(_x, _y, GREEN_BLINK);
+    }
+    else {
+      gb.display.drawImage(_x, _y, GREEN_STAND);
+    }
+  }
+  if (_color == 'y') {
+    if (timerFrame >= 25 && timerSecond%4 == 3) {
+      gb.display.drawImage(_x, _y, YELLOW_BLINK);
+    }
+    else {
+      gb.display.drawImage(_x, _y, YELLOW_STAND);
+    }
+  }
+}
+void drawPuyoPopA(int _x, int _y, char _color) {
+  if (_color == 'r') {
+    if (timerFrame >= 25 && timerSecond%4 == 0) {
+      gb.display.drawImage(_x, _y, RED_BLINK);
+    }
+    else {
+      gb.display.drawImage(_x, _y, RED_STAND);
+    }
+  }
+  if (_color == 'b') {
+    if (timerFrame >= 25 && timerSecond%4 == 1) {
+      gb.display.drawImage(_x, _y, BLUE_STAND);
+    }
+    else {
+      gb.display.drawImage(_x, _y, BLUE_STAND);
+    }
+  }
+  if (_color == 'g') {
+    if (timerFrame >= 25 && timerSecond%4 == 2) {
+      gb.display.drawImage(_x, _y, GREEN_BLINK);
+    }
+    else {
+      gb.display.drawImage(_x, _y, GREEN_STAND);
+    }
+  }
+  if (_color == 'y') {
+    if (timerFrame >= 25 && timerSecond%4 == 3) {
+      gb.display.drawImage(_x, _y, YELLOW_BLINK);
+    }
+    else {
+      gb.display.drawImage(_x, _y, YELLOW_STAND);
+    }
+  }
+}
+void drawPuyoPopB(int _x, int _y, char _color) {
   if (_color == 'r') {
     if (timerFrame >= 25 && timerSecond%4 == 0) {
       gb.display.drawImage(_x, _y, RED_BLINK);
