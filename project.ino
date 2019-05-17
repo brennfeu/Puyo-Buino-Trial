@@ -327,6 +327,7 @@ void setup() {
 
   srand(time(NULL));
   resetGame();
+  gb.sound.play("/music/puyobuino.wav", true); // true for infinite looping
 }
 
 // INFINITE LOOP
@@ -334,16 +335,6 @@ void loop() {
   // put your main code here, to run repeatedly:
   while (!gb.update());
   gb.display.clear();
-  if (music == -1) {
-    // time to start music!
-    // we are starting the file "test.wav" in our sketch folder
-    // gb.sound.play() will return the track identifier, which we will store into our music variable for later use
-    music = gb.sound.play("puyobuino.wav", true); // true for infinite looping
-  } else {
-    // music was already running, time to stop it
-    gb.sound.stop(music);
-    music = -1; // aaaaaand reset our track indicator
-  }
 
   if ((board[0][2] != 'x' && board[1][2] != 'e' ) || (board[0][3] != 'x' && board[1][3] != 'e')) {
     gameOver = true;
