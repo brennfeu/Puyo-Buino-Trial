@@ -278,6 +278,7 @@ int l = 0;
 
 int timerFrame = 0;
 int timerSecond = 0;
+int8_t music = -1;
 bool gameOver = false;
 int state = 0;
 char colorList[4] = {'r', 'g', 'b', 'y'};
@@ -333,8 +334,18 @@ void loop() {
   // put your main code here, to run repeatedly:
   while (!gb.update());
   gb.display.clear();
+  if (music == -1) {
+    // time to start music!
+    // we are starting the file "test.wav" in our sketch folder
+    // gb.sound.play() will return the track identifier, which we will store into our music variable for later use
+    music = gb.sound.play("puyobuino.wav", true); // true for infinite looping
+  } else {
+    // music was already running, time to stop it
+    gb.sound.stop(music);
+    music = -1; // aaaaaand reset our track indicator
+  }
 
-  if (board[0][2] != 'x' || board[0][3] != 'x') {
+  if ((board[0][2] != 'x' && board[1][2] != 'e' ) || (board[0][3] != 'x' && board[1][3] != 'e')) {
     gameOver = true;
   }
   if (gb.buttons.pressed(BUTTON_MENU)) {
@@ -409,7 +420,11 @@ void resetGame() {
   puyo22 = getRandomColor();
 }
 void spawnNew() {
-  if (timerSecond == 0) { gameOver = true; return; }
+  gb.lights.fill(BLACK);
+  if (timerSecond == 0) {
+    gameOver = true;
+    return;
+  }
   
   currentPuyoOrientation = 0;
   currentPuyoX = 10;
@@ -591,6 +606,7 @@ void checkBoard() {
   for (i = 0; i < 11; i++) {
     for (j = 0; j < 6; j++) {
       if (board[i + 1][j] == 'e' && board[i][j] != 'x' && board[i][j] != 'e') {
+        gb.lights.fill(BLACK);
         chute = true;
         boardFall[i][j] += 1;
         if (boardFall[i][j] >= 5) {
@@ -674,12 +690,27 @@ void checkCombos() {
           for (k = 0; k < 12; k++) {
             for (l = 0; l < 6; l++) {
               if (comboBoardA[k][l]) {
-                boardPop[k][l] = 10;
-                board[k][l] = 'e';
                 gb.sound.playCancel();
+                gb.sound.playOK();
+                gb.sound.tone(500 + (factor*100), 500);
+                
+                if (board[k][l] == 'r') {
+                  gb.lights.fill(RED);
+                }
+                if (board[k][l] == 'b') {
+                  gb.lights.fill(BLUE);
+                }
+                if (board[k][l] == 'y') {
+                  gb.lights.fill(YELLOW);
+                }
+                if (board[k][l] == 'g') {
+                  gb.lights.fill(GREEN);
+                }
 
                 score += pow(2, factor)/2;
                 points = 0;
+                boardPop[k][l] = 10;
+                board[k][l] = 'e';
               }
             }
           }
