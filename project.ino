@@ -27,10 +27,10 @@ const uint16_t BLUE_STAND_DATA[] = {
   0, // mode couleur
 
   0xa254, 0x051d, 0x051d, 0x051d, 0xa254,
-    0x051d, 0xffff, 0x051d, 0xffff, 0x051d,
-    0x051d, 0x0000, 0x051d, 0x0000, 0x051d,
-    0x051d, 0x051d, 0x051d, 0x051d, 0x051d,
-    0xa254, 0x051d, 0x051d, 0x051d, 0xa254,
+  0x051d, 0xffff, 0x051d, 0xffff, 0x051d,
+  0x051d, 0x0000, 0x051d, 0x0000, 0x051d,
+  0x051d, 0x051d, 0x051d, 0x051d, 0x051d,
+  0xa254, 0x051d, 0x051d, 0x051d, 0xa254,
 };
 Image BLUE_STAND(BLUE_STAND_DATA);
 
@@ -44,10 +44,10 @@ const uint16_t GREEN_STAND_DATA[] = {
   0, // mode couleur
 
   0xa254, 0x2589, 0x2589, 0x2589, 0xa254,
-    0xb723, 0xffff, 0x2589, 0xffff, 0xb723,
-    0xffff, 0xb723, 0x2589, 0xb723, 0xffff,
-    0x2589, 0x2589, 0x2589, 0x2589, 0x2589,
-    0xa254, 0x2589, 0x2589, 0x2589, 0xa254,
+  0xb723, 0xffff, 0x2589, 0xffff, 0xb723,
+  0xffff, 0xb723, 0x2589, 0xb723, 0xffff,
+  0x2589, 0x2589, 0x2589, 0x2589, 0x2589,
+  0xa254, 0x2589, 0x2589, 0x2589, 0xa254,
 };
 Image GREEN_STAND(GREEN_STAND_DATA);
 
@@ -61,10 +61,10 @@ const uint16_t YELLOW_STAND_DATA[] = {
   0, // mode couleur
 
   0xa254, 0xff80, 0xff80, 0xff80, 0xa254,
-    0xff80, 0xff80, 0xff80, 0xff80, 0xff80,
-    0xfbe4, 0xfbe4, 0xff80, 0xfbe4, 0xfbe4,
-    0xff80, 0xff80, 0xff80, 0xff80, 0xff80,
-    0xa254, 0xff80, 0xff80, 0xff80, 0xa254,
+  0xff80, 0xff80, 0xff80, 0xff80, 0xff80,
+  0xfbe4, 0xfbe4, 0xff80, 0xfbe4, 0xfbe4,
+  0xff80, 0xff80, 0xff80, 0xff80, 0xff80,
+  0xa254, 0xff80, 0xff80, 0xff80, 0xa254,
 };
 Image YELLOW_STAND(YELLOW_STAND_DATA);
 
@@ -78,10 +78,10 @@ const uint16_t RED_BLINK_DATA[] = {
   0, // mode couleur
 
   0xa254, 0xe8e4, 0xe8e4, 0xe8e4, 0xa254,
-    0xe8e4, 0xe8e4, 0xe8e4, 0xe8e4, 0xe8e4,
-    0xe8e4, 0x8802, 0x8802, 0x8802, 0xe8e4,
-    0xe8e4, 0xe8e4, 0xe8e4, 0xe8e4, 0xe8e4,
-    0xa254, 0xe8e4, 0xe8e4, 0xe8e4, 0xa254,
+  0xe8e4, 0xe8e4, 0xe8e4, 0xe8e4, 0xe8e4,
+  0xe8e4, 0x8802, 0x8802, 0x8802, 0xe8e4,
+  0xe8e4, 0xe8e4, 0xe8e4, 0xe8e4, 0xe8e4,
+  0xa254, 0xe8e4, 0xe8e4, 0xe8e4, 0xa254,
 };
 Image RED_BLINK(RED_BLINK_DATA);
 
@@ -95,10 +95,10 @@ const uint16_t BLUE_BLINK_DATA[] = {
   0, // mode couleur
 
   0xa254, 0x051d, 0x051d, 0x051d, 0xa254,
-    0x051d, 0x0000, 0x051d, 0x0000, 0x051d,
-    0x051d, 0xffff, 0x051d, 0xffff, 0x051d,
-    0x051d, 0x051d, 0x051d, 0x051d, 0x051d,
-    0xa254, 0x051d, 0x051d, 0x051d, 0xa254,
+  0x051d, 0x0000, 0x051d, 0x0000, 0x051d,
+  0x051d, 0xffff, 0x051d, 0xffff, 0x051d,
+  0x051d, 0x051d, 0x051d, 0x051d, 0x051d,
+  0xa254, 0x051d, 0x051d, 0x051d, 0xa254,
 };
 Image BLUE_BLINK(BLUE_BLINK_DATA);
 
@@ -112,10 +112,10 @@ const uint16_t GREEN_BLINK_DATA[] = {
   0, // mode couleur
 
   0xa254, 0x2589, 0x2589, 0x2589, 0xa254,
-    0x2589, 0x2589, 0x2589, 0x2589, 0x2589,
-    0xb723, 0xb723, 0x2589, 0xb723, 0xb723,
-    0x2589, 0x2589, 0x2589, 0x2589, 0x2589,
-    0xa254, 0x2589, 0x2589, 0x2589, 0xa254,
+  0x2589, 0x2589, 0x2589, 0x2589, 0x2589,
+  0xb723, 0xb723, 0x2589, 0xb723, 0xb723,
+  0x2589, 0x2589, 0x2589, 0x2589, 0x2589,
+  0xa254, 0x2589, 0x2589, 0x2589, 0xa254,
 };
 Image GREEN_BLINK(GREEN_BLINK_DATA);
 
@@ -135,6 +135,141 @@ const uint16_t YELLOW_BLINK_DATA[] = {
   0xa254, 0xff80, 0xff80, 0xff80, 0xa254,
 };
 Image YELLOW_BLINK(YELLOW_BLINK_DATA);
+
+// RED_POP_1          frame 29/36
+const uint16_t RED_POP_1_DATA[] = {
+  5, 5, // largeur, hauteur
+  1, // images
+  0, // boucle image
+  0xa254, // couleur transparente
+  0, // mode couleur
+
+  0xa254, 0xe8e4, 0xe8e4, 0xe8e4, 0xa254,
+  0xe8e4, 0xa254, 0xa254, 0xa254, 0xe8e4,
+  0xe8e4, 0xa254, 0xa254, 0xa254, 0xe8e4,
+  0xe8e4, 0xa254, 0xa254, 0xa254, 0xe8e4,
+  0xa254, 0xe8e4, 0xe8e4, 0xe8e4, 0xa254,
+};
+Image RED_POP_1(RED_POP_1_DATA);
+
+
+// BLUE_POP_1
+const uint16_t BLUE_POP_1_DATA[] = {
+  5, 5, // largeur, hauteur
+  1, // images
+  0, // boucle image
+  0xa254, // couleur transparente
+  0, // mode couleur
+
+  0xa254, 0x051d, 0x051d, 0x051d, 0xa254,
+  0x051d, 0xa254, 0xa254, 0xa254, 0x051d,
+  0x051d, 0xa254, 0xa254, 0xa254, 0x051d,
+  0x051d, 0xa254, 0xa254, 0xa254, 0x051d,
+  0xa254, 0x051d, 0x051d, 0x051d, 0xa254,
+};
+Image BLUE_POP_1(BLUE_POP_1_DATA);
+
+
+// GREEN_POP_1
+const uint16_t GREEN_POP_1_DATA[] = {
+  5, 5, // largeur, hauteur
+  1, // images
+  0, // boucle image
+  0xa254, // couleur transparente
+  0, // mode couleur
+
+  0xa254, 0xa254, 0xa254, 0xa254, 0xa254,
+  0xb723, 0xffff, 0xa254, 0xffff, 0xb723,
+  0xffff, 0xb723, 0xa254, 0xb723, 0xffff,
+  0xa254, 0xa254, 0xa254, 0xa254, 0xa254,
+  0xa254, 0xa254, 0xa254, 0xa254, 0xa254,
+};
+Image GREEN_POP_1(GREEN_POP_1_DATA);
+
+
+// YELLOW_POP_1
+const uint16_t YELLOW_POP_1_DATA[] = {
+  5, 5, // largeur, hauteur
+  1, // images
+  0, // boucle image
+  0xa254, // couleur transparente
+  0, // mode couleur
+
+  0xa254, 0xa254, 0xa254, 0xa254, 0xa254,
+  0xffff, 0xffff, 0xa254, 0xffff, 0xffff,
+  0xffff, 0xa254, 0xa254, 0xa254, 0xffff,
+  0xffff, 0xffff, 0xa254, 0xffff, 0xffff,
+  0xa254, 0xa254, 0xa254, 0xa254, 0xa254,
+};
+Image YELLOW_POP_1(YELLOW_POP_1_DATA);
+
+// RED_POP_2
+const uint16_t RED_POP_2_DATA[] = {
+  5, 5, // largeur, hauteur
+  1, // images
+  0, // boucle image
+  0xa254, // couleur transparente
+  0, // mode couleur
+
+  0xa254, 0xe8e4, 0xa254, 0xe8e4, 0xa254,
+  0xe8e4, 0xa254, 0xa254, 0xa254, 0xe8e4,
+  0xa254, 0xa254, 0xa254, 0xa254, 0xa254,
+  0xe8e4, 0xa254, 0xa254, 0xa254, 0xe8e4,
+  0xa254, 0xe8e4, 0xa254, 0xe8e4, 0xa254,
+};
+Image RED_POP_2(RED_POP_2_DATA);
+
+
+// BLUE_POP_2
+const uint16_t BLUE_POP_2_DATA[] = {
+  5, 5, // largeur, hauteur
+  1, // images
+  0, // boucle image
+  0xa254, // couleur transparente
+  0, // mode couleur
+
+  0xa254, 0x051d, 0xa254, 0x051d, 0xa254,
+  0x051d, 0xa254, 0xa254, 0xa254, 0x051d,
+  0xa254, 0xa254, 0xa254, 0xa254, 0xa254,
+  0x051d, 0xa254, 0xa254, 0xa254, 0x051d,
+  0xa254, 0x051d, 0xa254, 0x051d, 0xa254,
+};
+Image BLUE_POP_2(BLUE_POP_2_DATA);
+
+
+// GREEN_POP_2
+const uint16_t GREEN_POP_2_DATA[] = {
+  5, 5, // largeur, hauteur
+  1, // images
+  0, // boucle image
+  0xa254, // couleur transparente
+  0, // mode couleur
+
+  0xa254, 0xa254, 0xa254, 0xa254, 0xa254,
+  0xa254, 0xa254, 0xa254, 0xa254, 0xa254,
+  0xb723, 0xffff, 0xa254, 0xa254, 0xa254,
+  0xffff, 0xb723, 0xa254, 0xffff, 0xb723,
+  0xa254, 0xa254, 0xa254, 0xb723, 0xffff,
+};
+Image GREEN_POP_2(GREEN_POP_2_DATA);
+
+
+
+// YELLOW_POP_2
+const uint16_t YELLOW_POP_2_DATA[] = {
+  5, 5, // largeur, hauteur
+  1, // images
+  0, // boucle image
+  0xa254, // couleur transparente
+  0, // mode couleur
+
+  0xa254, 0xa254, 0xa254, 0xa254, 0xa254,
+  0xa254, 0xa254, 0xa254, 0xa254, 0xa254,
+  0xffff, 0xffff, 0xa254, 0xffff, 0xffff,
+  0xffff, 0xa254, 0xa254, 0xa254, 0xffff,
+  0xffff, 0xffff, 0xa254, 0xffff, 0xffff,
+};
+Image YELLOW_POP_2(YELLOW_POP_2_DATA);
 
 int i = 0;
 int j = 0;
@@ -158,6 +293,10 @@ int currentPuyoX = 0;
 int currentPuyoY = 0;
 int currentPuyoOrientation = 0;
 
+int score = 0;
+int points = 0;
+int factor = 0;
+
 char board[12][6] = {
   {'e', 'e', 'x', 'x', 'e', 'e'},
   {'e', 'e', 'e', 'e', 'e', 'e'},
@@ -174,6 +313,7 @@ char board[12][6] = {
 };
 int boardFall[12][6];
 int boardPop[12][6];
+int testValue = 0;
 
 String string1 = "";
 String string2 = "";
@@ -201,26 +341,37 @@ void loop() {
     resetGame();
   }
 
-  if (!gameOver) {    
+  if (!gameOver) {
     // GAME
     incrementTimer();
-    if (state == 4) {spawnNew();}
-    if (state == 0) {currentPuyoMove();}
-    if (state == 0) {collisionCurrentPuyo();}
-    if (state == 1) {checkBoard();}
-    if (state == 2) {checkCombos();}
+    if (state == 4) {
+      spawnNew();
+    }
+    if (state == 0) {
+      currentPuyoMove();
+    }
+    if (state == 0) {
+      collisionCurrentPuyo();
+    }
+    if (state == 1) {
+      checkBoard();
+    }
+    if (state == 2) {
+      checkCombos();
+    }
 
     // UI
     drawBoard();
     drawNextPuyos();
     drawUI();
 
-    // TESTS
-    drawText("", state, "");
+    // TEXT
+    drawText(score);
   }
   else {
     gb.display.setCursor(10, 10);
     gb.display.print("GAME OVER\n\nPRESS A\nTO RESTART !");
+    drawText(score);
     if (gb.buttons.pressed(BUTTON_A)) {
       resetGame();
     }
@@ -235,13 +386,17 @@ void resetGame() {
   timerFrame = 0;
   gameOver = false;
   state = 4;
+  testValue = 0;
+  score = 0;
+  points = 0;
+  factor = 0;
 
   // board
   for (i = 0; i < 12; i++) {
     for (j = 0; j < 6; j++) {
       board[i][j] = 'e';
       boardFall[i][j] = 0;
-      boardPop[i][i] = 0;
+      boardPop[i][j] = 0;
     }
   }
   board[0][2] = 'x';
@@ -254,18 +409,21 @@ void resetGame() {
   puyo22 = getRandomColor();
 }
 void spawnNew() {
-    currentPuyoOrientation = 0;
-    currentPuyoX = 10;
-    currentPuyoY = 0;
+  if (timerSecond == 0) { gameOver = true; return; }
   
-    puyo01 = puyo11;
-    puyo02 = puyo12;
-    puyo11 = puyo21;
-    puyo12 = puyo22;
-    puyo21 = getRandomColor();
-    puyo22 = getRandomColor();
+  currentPuyoOrientation = 0;
+  currentPuyoX = 10;
+  currentPuyoY = 0;
 
-    state = 0;
+  puyo01 = puyo11;
+  puyo02 = puyo12;
+  puyo11 = puyo21;
+  puyo12 = puyo22;
+  puyo21 = getRandomColor();
+  puyo22 = getRandomColor();
+
+  state = 0;
+  factor = 0;
 }
 void setDisplayColor(char _color) {
   if (_color == 'b') {
@@ -289,16 +447,13 @@ void setDisplayColor(char _color) {
 }
 void incrementTimer() {
   timerFrame++;
-  if (timerFrame > 30) {
+  if (timerFrame > 30 && timerSecond > 0) {
     timerSecond--;
     timerFrame -= 30;
   }
-  if (timerSecond <= 0) {
-    gameOver = true;
-  }
   for (i = 0; i < 12; i++) {
     for (j = 0; j < 6; j++) {
-      boardPop[i][j]--;
+      boardPop[i][j] -= 1;
     }
   }
 }
@@ -417,6 +572,8 @@ void collisionCurrentPuyo() {
       board[currentYTile][currentXTile - 1] = puyo02;
     }
 
+    
+    gb.sound.playOK();
     state = 1;
   }
 }
@@ -433,13 +590,13 @@ void checkBoard() {
   bool chute = false;
   for (i = 0; i < 11; i++) {
     for (j = 0; j < 6; j++) {
-      if (board[i+1][j] == 'e' && board[i][j] != 'x' && board[i][j] != 'e') {
+      if (board[i + 1][j] == 'e' && board[i][j] != 'x' && board[i][j] != 'e') {
         chute = true;
         boardFall[i][j] += 1;
         if (boardFall[i][j] >= 5) {
-          boardFall[i+1][j] = boardFall[i][j] - 5;
+          boardFall[i + 1][j] = boardFall[i][j] - 5;
           boardFall[i][j] = 0;
-          board[i+1][j] = board[i][j];
+          board[i + 1][j] = board[i][j];
           board[i][j] = 'e';
         }
       }
@@ -456,66 +613,97 @@ void checkBoard() {
   }
 }
 void checkCombos() {
-  bool comboBoard[12][6];
+  bool comboBoardA[12][6];
+  bool comboBoardB[12][6];
+  bool verif = true;
   int comboCounter = 0;
-  state = 3;
-  
+  state = 4;
+
   // All Puyos Loop
   for (i = 0; i < 12; i++) {
     for (j = 0; j < 6; j++) {
-      if (board[i][j] != 'e' && board[i][j] != 'x' && boardPop[i][j] != 0) {
-        
-        // reset board
+      if (board[i][j] != 'e' && board[i][j] != 'x' && boardPop[i][j] < 0) {
         for (k = 0; k < 12; k++) {
           for (l = 0; l < 6; l++) {
-            comboBoard[k][l] == false;
+            comboBoardA[k][l] = false;
+            comboBoardB[k][l] = false;
           }
         }
-        comboCounter = 0;
-        
-        // All Puyos Loop Comparison ASC
-        for (k = 0; k < 12; k++) {
-          for (l = 1; l < 5; l++) {
-            if (i == k && j == l) {
-              comboBoard[k][l] == true;
-              comboCounter++;
-            }
-            if (comboBoard[k][l-1]) {
-              comboBoard[k][l] == true;
-              comboCounter++;
-            }
-            if (k == 0) {
-              // just to make sure next won't be an error
-            }
-            else if (comboBoard[k-1][l]) {
-              comboBoard[k][l] == true;
-              comboCounter++;
-            }
-          }
-        }
+        verif = true;
+        comboCounter = 1;
 
-        // Explosion confirmed ?
+        comboBoardB[i][j] = true;
+        while (verif) {
+          verif = false;
+          for (k = 0; k < 12; k++) {
+            for (l = 0; l < 6; l++) {
+              if (comboBoardB[k][l] && !comboBoardA[k][l]) {
+                if (k != 11 && board[k + 1][l] == board[k][l] && !comboBoardA[k + 1][l] && !comboBoardB[k + 1][l]) {
+                  comboBoardB[k + 1][l] = true;
+                  comboCounter++;
+                }
+                if (k != 0 && board[k - 1][l] == board[k][l] && !comboBoardA[k - 1][l] && !comboBoardB[k - 1][l]) {
+                  comboBoardB[k - 1][l] = true;
+                  comboCounter++;
+                }
+                if (l != 5 && board[k][l + 1] == board[k][l] && !comboBoardA[k][l + 1] && !comboBoardB[k][l + 1]) {
+                  comboBoardB[k][l + 1] = true;
+                  comboCounter++;
+                }
+                if (l != 0 && board[k][l - 1] == board[k][l] && !comboBoardA[k][l - 1] && !comboBoardA[k][l - 1]) {
+                  comboBoardB[k][l - 1] = true;
+                  comboCounter++;
+                }
+                comboBoardA[k][l] = true;
+                comboBoardB[k][l] = false;
+              }
+            }
+          }
+
+          for (k = 0; k < 12; k++) {
+            for (l = 0; l < 6; l++) {
+              if (comboBoardB[k][l]) {
+                verif = true;
+              }
+            }
+          }
+        }
+        
         if (comboCounter >= 4) {
-          boardPop[i][j] = 10; // nb frames
-          board[i][j] = 'e';
+          factor++;
+          for (k = 0; k < 12; k++) {
+            for (l = 0; l < 6; l++) {
+              if (comboBoardA[k][l]) {
+                boardPop[k][l] = 10;
+                board[k][l] = 'e';
+                gb.sound.playCancel();
+
+                score += pow(2, factor)/2;
+                points = 0;
+              }
+            }
+          }
         }
       }
     }
   }
 
   // anim
+  verif = false;
   for (i = 0; i < 12; i++) {
     for (j = 0; j < 6; j++) {
       if (boardPop[i][j] > 5) {
         drawPuyoPopA(j * 5 + 2, i * 5 + 2, board[i][j]);
         state = 2;
+        verif = true;
       }
       else if (boardPop[i][j] > 0) {
         drawPuyoPopB(j * 5 + 2, i * 5 + 2, board[i][j]);
         state = 2;
+        verif = true;
       }
-      else if (boardPop[i][j] == 0) {
-        state = 4;
+      else if (boardPop[i][j] == 0 && !verif) {
+        state = 1;
       }
     }
   }
@@ -581,18 +769,14 @@ void drawNextPuyos() {
     }
   }
 }
-void drawText(String _string1, int _string2, String _string3) {
+void drawText(int _int) {
   setDisplayColor('w');
-  gb.display.setCursor(56, 26);
-  gb.display.print(_string1);
-  gb.display.setCursor(59, 33);
-  gb.display.print(_string2);
-  gb.display.setCursor(53, 41);
-  gb.display.print(_string3);
+  gb.display.setCursor(40, 35);
+  gb.display.printf("%i PTS", _int);
 }
 void drawPuyo(int _x, int _y, char _color) {
   if (_color == 'r') {
-    if (timerFrame >= 25 && timerSecond%4 == 0) {
+    if (timerFrame >= 25 && timerSecond % 4 == 0) {
       gb.display.drawImage(_x, _y, RED_BLINK);
     }
     else {
@@ -600,7 +784,7 @@ void drawPuyo(int _x, int _y, char _color) {
     }
   }
   if (_color == 'b') {
-    if (timerFrame >= 25 && timerSecond%4 == 1) {
+    if (timerFrame >= 25 && timerSecond % 4 == 1) {
       gb.display.drawImage(_x, _y, BLUE_STAND);
     }
     else {
@@ -608,7 +792,7 @@ void drawPuyo(int _x, int _y, char _color) {
     }
   }
   if (_color == 'g') {
-    if (timerFrame >= 25 && timerSecond%4 == 2) {
+    if (timerFrame >= 25 && timerSecond % 4 == 2) {
       gb.display.drawImage(_x, _y, GREEN_BLINK);
     }
     else {
@@ -616,7 +800,7 @@ void drawPuyo(int _x, int _y, char _color) {
     }
   }
   if (_color == 'y') {
-    if (timerFrame >= 25 && timerSecond%4 == 3) {
+    if (timerFrame >= 25 && timerSecond % 4 == 3) {
       gb.display.drawImage(_x, _y, YELLOW_BLINK);
     }
     else {
@@ -626,70 +810,30 @@ void drawPuyo(int _x, int _y, char _color) {
 }
 void drawPuyoPopA(int _x, int _y, char _color) {
   if (_color == 'r') {
-    if (timerFrame >= 25 && timerSecond%4 == 0) {
-      gb.display.drawImage(_x, _y, RED_BLINK);
-    }
-    else {
-      gb.display.drawImage(_x, _y, RED_STAND);
-    }
+    gb.display.drawImage(_x, _y, RED_POP_1);
   }
   if (_color == 'b') {
-    if (timerFrame >= 25 && timerSecond%4 == 1) {
-      gb.display.drawImage(_x, _y, BLUE_STAND);
-    }
-    else {
-      gb.display.drawImage(_x, _y, BLUE_STAND);
-    }
+    gb.display.drawImage(_x, _y, BLUE_POP_1);
   }
   if (_color == 'g') {
-    if (timerFrame >= 25 && timerSecond%4 == 2) {
-      gb.display.drawImage(_x, _y, GREEN_BLINK);
-    }
-    else {
-      gb.display.drawImage(_x, _y, GREEN_STAND);
-    }
+    gb.display.drawImage(_x, _y, GREEN_POP_1);
   }
   if (_color == 'y') {
-    if (timerFrame >= 25 && timerSecond%4 == 3) {
-      gb.display.drawImage(_x, _y, YELLOW_BLINK);
-    }
-    else {
-      gb.display.drawImage(_x, _y, YELLOW_STAND);
-    }
+    gb.display.drawImage(_x, _y, YELLOW_POP_1);
   }
 }
 void drawPuyoPopB(int _x, int _y, char _color) {
   if (_color == 'r') {
-    if (timerFrame >= 25 && timerSecond%4 == 0) {
-      gb.display.drawImage(_x, _y, RED_BLINK);
-    }
-    else {
-      gb.display.drawImage(_x, _y, RED_STAND);
-    }
+    gb.display.drawImage(_x, _y, RED_POP_2);
   }
   if (_color == 'b') {
-    if (timerFrame >= 25 && timerSecond%4 == 1) {
-      gb.display.drawImage(_x, _y, BLUE_STAND);
-    }
-    else {
-      gb.display.drawImage(_x, _y, BLUE_STAND);
-    }
+    gb.display.drawImage(_x, _y, BLUE_POP_2);
   }
   if (_color == 'g') {
-    if (timerFrame >= 25 && timerSecond%4 == 2) {
-      gb.display.drawImage(_x, _y, GREEN_BLINK);
-    }
-    else {
-      gb.display.drawImage(_x, _y, GREEN_STAND);
-    }
+    gb.display.drawImage(_x, _y, GREEN_POP_2);
   }
   if (_color == 'y') {
-    if (timerFrame >= 25 && timerSecond%4 == 3) {
-      gb.display.drawImage(_x, _y, YELLOW_BLINK);
-    }
-    else {
-      gb.display.drawImage(_x, _y, YELLOW_STAND);
-    }
+    gb.display.drawImage(_x, _y, YELLOW_POP_2);
   }
 }
 void drawCross(int _x, int _y) {
